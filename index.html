@@ -3,57 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Modern Portfolio 2024</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1 class="logo">My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm [Your Name], a passionate web developer with experience in building responsive and user-friendly websites.</p>
+    <section id="hero">
+        <div class="container">
+            <h2>Hi, I'm [Your Name]</h2>
+            <p>I'm a web developer creating modern and responsive designs.</p>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of project 1.</p>
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm [Your Name], a passionate web developer with experience in building responsive and user-friendly websites.</p>
         </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of project 2.</p>
-        </div>
-        <!-- Add more projects as needed -->
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <p>Description of project 1.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 2</h3>
+                    <p>Description of project 2.</p>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-            <button type="submit">Send</button>
-        </form>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="scripts.js"></script>

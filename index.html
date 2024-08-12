@@ -2,55 +2,173 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="/public/logos/favicon-16x16.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio - Sagar</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Khwanchai Portfolio</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experiences</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <div class="nav-icons">
+              <a href="https://th.linkedin.com" target="_blank"><img src="public/logos/linkedin-icon.svg" alt="LinkedIn"></a>
+              <a href="https://www.jobthai.com/th" target="_blank"><img src="/public/logos/jobthai-icon.svg" alt="GitHub"></a>
+              <a href="https://th.jobsdb.com" target="_blank"><img src="public/logos/sdb-icon.jpg" alt="LinkedIn"></a>
+            </div>
+          </nav>
     </header>
-    <section id="home">
-        <div class="hero-content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Showcasing my work and skills</p>
-            <a href="#projects" class="btn">View Projects</a>
+
+    <main>
+        <section id="home" class="profile">         
+            <img src="/public/images/profile.jpg" alt="Profile Picture">
+            <div class="profile-text">
+                <div>
+                    <h3>I'm Champ</h3> 
+                    <h2>Khwanchai Sopa</h2>    
+                    <p>Software Tester. My role involves ensuring the quality of software by identifying and fixing bugs, testing performance, and evaluating security. I enjoy collaborating with development teams to deliver high-quality products that meet user expectations.</p>
+                </div>
+            </div>            
+        </section>
+        
+        
+        <section id="skills"  class="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <img src="/public/logos/icon-vscode.svg" alt="Vscode">
+                    <p>Vscode</p>
+                </div>
+                <div class="skill">
+                    <img src="/public/logos/icon-python.svg" alt="Python">
+                    <p>Python</p>
+                </div>
+                <div class="skill">
+                    <img src="/public/logos/icon-postman.svg" alt="Postman">
+                    <p>Postman</p>
+                </div>
+                <div class="skill">
+                    <img src="/public/logos/icon-robotframework.svg" alt="Robotfw">
+                    <p>Robotfw</p>
+                </div>
+                <div class="skill">
+                    <img src="/public/logos/icon-sql.svg" alt="SQL">
+                    <p>SQL</p>
+                </div>
+                <div class="skill">
+                    <img src="/public/logos/icon-jira.svg" alt="Jira">
+                    <p>Jira</p>
+                </div>
+                <div class="skill">
+                    <img src="/public/logos/icon-conflue.svg" alt="Conflue">
+                    <p>Conflue</p>
+                </div>
+                <div class="skill">
+                    <img src="/public/logos/icon-figma.svg" alt="Figma">
+                    <p>Figma</p>
+                </div>
+            </div>
+        </section>
+        <section id="experience" class="experience">
+            <h2>Experiences</h2>
+            
+            <div class="experience-item">
+                <div class="experience-logo">
+                    <img src="/public/logos/logo-cliniter.svg" alt="cliniter"  >
+                </div>
+                <div class="experience-details">
+                    <h3>Software Tester</h3>
+                    <p><strong>May 2023 - Present</strong></p>
+                    <ul>
+                        <li>Worked all</li>
+                        <li>Worked all</li>
+                        <li>Worked all</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-item" >
+                <div class="experience-logo">
+                    <img src="/public/logos/logo-pruksa.svg" alt="pruksa">
+                </div>
+                <div class="experience-details">
+                    <h3>Application Support</h3>
+                    <p><strong>Feb 2021 - Oct 2021</strong></p>
+                    <ul>
+                        <li>Worked all</li>
+                        <li>Worked all</li>
+                        <li>Worked all</li>                       
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <div class="project-image">
+                    <img src="public/images/project-1.png" alt="Wingie Project" >
+                </div>
+                <div class="project-details">
+                    <h3>CLINITER DENTAL</h3>
+                    <p>รอก่อน..........</p>
+                    <div class="project-tech">
+                        <span>Manual Test</span>
+                        <span>Test case</span>
+                        <span>Robot framework</span>                                      
+                    </div>                    
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-image">
+                    <img src="public/images/project-2.png" alt="Wingie Project">
+                </div>
+                <div class="project-details">
+                    <h3>PCU</h3>
+                    <p>รอก่อน..........</p>
+                    <div class="project-tech">
+                        <span>Manual Test</span>
+                        <span>Test case</span>
+                        <span>Test API</span>                    
+                    </div>                    
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+        <div class="contact-item">            
+            <div class="contact-info" href="/public/files/resume.pdf" target="_blank">
+                <p><img src="/public/logos/phone-icon.png" alt="Phone"> 098-279-xxxx</p>
+                <p><img src="/public/logos/email-icon.png" alt="Email"> email@gmail.com</p>
+                
+                <button class="button" data-text="Awesome" id="resume-button">
+                    <span class="actual-text">&nbsp;Resume&nbsp;</span>
+                    <span aria-hidden="true" class="hover-text">&nbsp;Resume&nbsp;</span>
+                </button>
+                <script>
+                    document.getElementById('resume-button').onclick = function() {
+                        window.open('/public/files/resume.pdf', '_blank');
+                    };
+                </script>
+                  
+            </div>
+           
+            <div class="resume-content" id="resumeContent" style="display: none;">
+                <img src="/public/images/resume-image.png" alt="Resume" class="resume-image">
+                <a href="/public/files/resume.pdf" download class="download-button">Download Resume</a>
+            </div>
         </div>
-    </section>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>มีงจะอ่านทำไมวะเนี่ย</p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-item">Project 1</div>
-            <div class="project-item">Project 2</div>
-            <div class="project-item">Project 3</div>
-        </div>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <form action="#">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit" class="btn">Send</button>
-        </form>
-    </section>
+        </section>
+       
+    </main>
+
     <footer>
-        <p>&copy; 2024 My Portfolio</p>
+        <p>© 2024 KS ❤️️ All rights reserved.</p>
     </footer>
 </body>
 </html>

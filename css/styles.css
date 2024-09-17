@@ -81,6 +81,7 @@ nav a:hover::after {
 
 
 
+
 /* Profile Section */
 .profile {
     display: flex;
@@ -298,7 +299,6 @@ nav a:hover::after {
 }
 
 .project-details {
-    text-align: left;
     width: calc(100% - 320px); /* Adjust width to fit within the fixed size */
 }
 
@@ -344,15 +344,22 @@ nav a:hover::after {
 .download-button {
     background-color: #3a3a3c;
     color: #fff;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+.download-button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
 
 .contact {
-    background-color: #000000;
+    background-color: #000;
     padding: 40px;
     text-align: center;
     opacity: 0;
@@ -362,29 +369,39 @@ nav a:hover::after {
 
 .contact-item {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 20px auto;
-    background-color: #272626; /* Semi-transparent background */
+    background-color: #272626;
     border-radius: 10px;
-    max-width: 850px; 
+    padding: 20px;
+    max-width: 800px;
 }
 
 .contact h2 {
     font-size: 2em;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 .contact p {
+    color: #ddd;
     margin: 10px 0;
+    font-size: 18px;
 }
 
 .contact-info {
-    margin: 20px 0;
+    text-align: center;
 }
 
 .contact-info p {
     margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #fff;
 }
 
 .contact-info img {
@@ -392,6 +409,26 @@ nav a:hover::after {
     height: 24px;
     margin-right: 10px;
     vertical-align: middle;
+}
+
+.nav-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.nav-icons a {
+    margin: 0 10px;
+}
+
+.nav-icons img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.nav-icons img:hover {
+    transform: scale(1.1);
 }
 
 /* === removing default button style ===*/
@@ -455,40 +492,12 @@ footer p {
     color: #f7f7f7;
 }
 
-@media (max-width: 768px) {
-    .experience-item,
-    .project-item {
-        flex-direction: column;
-        width: 90%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+/* For large screens, e.g., desktops */
+@media screen and (min-width: 1024px) {
 
-    .experience-details,
-    
     .project-details {
-        width: 100%;
-    }
-
-    .project-image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-    .experience-logo img {
-        height: auto;
-    }
-    
-
-
-    .project-image img {
-        width: 100%;
-        height: auto;
-
+        text-align: left;
+        width: calc(100% - 320px); /* Adjust width to fit within the fixed size */
     }
 
     .experience {
@@ -503,3 +512,111 @@ footer p {
         background-size: cover;
     }
 }
+
+
+/* For medium screens, e.g., tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .project-details {
+        text-align: left;
+        width: calc(100% - 320px); /* Adjust width to fit within the fixed size */
+    }
+}
+
+/* For small screens, e.g., mobile phones */
+@media screen and (max-width: 767px) {
+
+    
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; /* Center items vertically */
+        margin: 60px auto 0; /* Set top margin to 60px and center horizontally */
+        height: calc(65vh - 30px); /* Adjust height to account for top margin */
+    }
+    
+    .profile img {
+        border-radius: 5%;
+        width: 200px;
+        height: 220px;
+        margin-top: 30px; /* Adjusted margin to create space between image and content above */
+        object-fit: cover;
+        transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    }
+    .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; /* Center items vertically */
+        margin: 60px auto 0; /* Set top margin to 60px and center horizontally */
+        height: calc(50vh - 30px); /* Adjust height to account for top margin */
+    }
+
+    .experience-item{
+            flex-direction: column;
+            width: 90%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+    .experience-details h3 {
+        font-size: 1.3em;
+    }
+
+    .experience-details p {
+        font-size: 1em;
+    }
+
+    .experience-details ul {
+        font-size: 0.9em;
+    }
+
+    .project-item {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        display: flex;
+    }
+
+    .project-image {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        margin: 10px auto 0;
+    }
+
+    .project-details {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        margin: 10px auto 0;
+    }
+
+    .project-details h3 {
+        font-size: 1.2em;
+    }
+
+    .project-details p {
+        font-size: 1em;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        display: flex;
+    }
+
+    nav a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 13px;
+        position: relative;
+    }
+
+}    
+    
